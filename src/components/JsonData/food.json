@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Butter Chicken",
+      "price": 12.99,
+      "image": "butter_chicken.jpg",
+      "description": "Tender chicken cooked in a rich and creamy tomato-based sauce."
+    },
+    {
+      "name": "Biryani",
+      "price": 10.99,
+      "image": "biryani.jpg",
+      "description": "Fragrant rice dish with aromatic spices, basmati rice, and choice of meat or vegetables."
+    },
+    {
+      "name": "Samosa",
+      "price": 2.49,
+      "image": "samosa.jpg",
+      "description": "Deep-fried pastry filled with spiced potatoes, peas, and sometimes meat."
+    },
+    {
+      "name": "Paneer Tikka",
+      "price": 8.99,
+      "image": "paneer_tikka.jpg",
+      "description": "Grilled chunks of marinated paneer cheese served with mint chutney."
+    },
+    {
+      "name": "Dosa",
+      "price": 7.99,
+      "image": "dosa.jpg",
+      "description": "Thin, crispy pancake made from fermented rice and urad dal batter, typically served with coconut chutney."
+    },
+    {
+      "name": "Chole Bhature",
+      "price": 9.99,
+      "image": "chole_bhature.jpg",
+      "description": "Fried bread paired with spicy chickpea curry."
+    }
+  ]
+  
