@@ -21,7 +21,7 @@ function App() {
   // add data to database
   const addData = async (values) => {
     setData([...data, values]);
-    await fetch("http://localhost:8081/api/addData", {
+    await fetch("https://food-app-server-ten.vercel.app/api/addData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ function App() {
   //get data from database
   const getData = async () => {
 
-    await fetch("http://localhost:8081/api/getData")
+    await fetch("https://food-app-server-ten.vercel.app/api/getData")
           .then(res => res.json())
           .then(userData => setData(userData.data))
           .catch(err => console.log(err))
@@ -51,7 +51,7 @@ function App() {
 
   //Login api
   const login = async (credential) => {
-  await fetch("http://localhost:8081/api/login",{
+  await fetch("https://food-app-server-ten.vercel.app/api/login",{
       method : "POST",
       headers : {
         "Content-Type" : "application/json"
@@ -86,7 +86,7 @@ function App() {
   //login validation api's
 
   const getLoginValidation = async() => {
-    await fetch("http://localhost:8081/api/getLoginValidation")
+    await fetch("https://food-app-server-ten.vercel.app/api/getLoginValidation")
           .then(res => res.json())
           .then(data => {
             console.log(data.data[0].isValidate);
@@ -98,7 +98,7 @@ function App() {
 
   //post api
   const updateLoginValidation = async() => {
-    await fetch("http://localhost:8081/api/updateValidation",{
+    await fetch("https://food-app-server-ten.vercel.app/api/updateValidation",{
       method : "PUT",
       body : JSON.stringify({isValidate: tempValidate}),
       headers : {

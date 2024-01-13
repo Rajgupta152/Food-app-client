@@ -12,7 +12,7 @@ export const Menu = (props) => {
   const [subtotal,setSubtotal] = useState('');
   // Food api
   const foodDataApi = () => {
-    fetch("http://localhost:8081/api/getFoodItem")
+    fetch("https://food-app-server-ten.vercel.app/api/getFoodItem")
       .then((res) => res.json())
       .then((data) => {
         console.log(data.data)
