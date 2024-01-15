@@ -38,7 +38,7 @@ const Nav = (props) => {
   
               <Box className = "btn-group" sx={{marginLeft: "auto"}}>
                   <Button sx={{color: "#fff"}}
-                   onClick={props.isValidate ? handleLogout : () => navigate("/login")
+                   onClick={props.isValidate ? handleLogout : () => navigate("/")
                    }>{logBtn}</Button>
               </Box>
               {props.isValidate && currentUser && (<Button sx={{color: "#fff"}}>{currentUser.name}</Button>)}
