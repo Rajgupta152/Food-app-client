@@ -20,7 +20,8 @@ const Nav = (props) => {
 
     const handleLogout = () => {
         props.loginSuccess(false);
-        localStorage.clear()
+        localStorage.clear();
+        navigate("/");
     }
 
     return(
@@ -38,7 +39,7 @@ const Nav = (props) => {
   
               <Box className = "btn-group" sx={{marginLeft: "auto"}}>
                   <Button sx={{color: "#fff"}}
-                   onClick={props.isValidate ? handleLogout : () => navigate("/")
+                   onClick={props.isValidate ? handleLogout : () => navigate("/login")
                    }>{logBtn}</Button>
               </Box>
               {props.isValidate && currentUser && (<Button sx={{color: "#fff"}}>{currentUser.name}</Button>)}
