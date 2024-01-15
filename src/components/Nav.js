@@ -21,9 +21,6 @@ const Nav = (props) => {
     const handleLogout = () => {
         props.loginSuccess(false);
         localStorage.clear();
-         if(setLogBtn === "Logout"){
-            navigate("/");
-        }
     }
 
     return(
