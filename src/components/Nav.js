@@ -21,7 +21,6 @@ const Nav = (props) => {
     const handleLogout = () => {
         props.loginSuccess(false);
         localStorage.clear();
-        navigate("/");
     }
 
     return(
