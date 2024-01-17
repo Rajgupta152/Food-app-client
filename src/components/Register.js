@@ -38,7 +38,7 @@ export const Register = (props) => {
                  label = "Please enter your full name"
                  onChange={formik.handleChange}
                  sx={{
-                    width: "80%"
+                    width: "100%"
                  }}
                  ></TextField>
                  {formik.errors.name && (<Typography color="error">{formik.errors.name}</Typography>)}
@@ -48,7 +48,7 @@ export const Register = (props) => {
                  label = "Please enter your email"
                  onChange={formik.handleChange}
                  sx={{
-                    width: "80%"
+                    width: "100%"
                  }}
                  ></TextField>
                  {formik.errors.email && (<Typography color="error">{formik.errors.email}</Typography>)}
@@ -58,15 +58,13 @@ export const Register = (props) => {
                  label = "Please enter password"
                  onChange={formik.handleChange}
                  sx={{
-                    width: "80%"
+                    width: "100%"
                  }}
                  ></TextField>
                  {formik.errors.password && (<Typography color="error">{formik.errors.password}</Typography>)}
                  <Button
                  type="submit"
-                 sx={{
-                    width: "80%"
-                 }}
+                 fullWidth
                  variant="contained"
                   >SIGN UP</Button>
             </form>

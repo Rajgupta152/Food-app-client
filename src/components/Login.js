@@ -62,7 +62,7 @@ const handleShowPassword = () => {
                  label = "Please enter your email"
                  onChange={formik.handleChange}
                  sx={{
-                    width: "80%"
+                    width: "100%"
                  }}
 
                  ></TextField>
@@ -74,7 +74,7 @@ const handleShowPassword = () => {
                  label = "Please enter password"
                  onChange={formik.handleChange}
                  sx={{
-                    width: "80%"
+                    width: "100%"
                  }}
                  InputProps={{endAdornment: formik.values.password && (
                     <InputAdornment position="start" onClick = {handleShowPassword}>
@@ -85,13 +85,14 @@ const handleShowPassword = () => {
                  {formik.errors.password && (<Typography color="error">{formik.errors.password}</Typography>)}
                  <Button
                  type="submit"
-                 sx={{
-                    width: "80%"
-                 }}
+                 fullWidth
                  variant="contained"
+                 sx={{mt: "10px"}}
                   >Login</Button>
-                  <span>if you are a new user</span>
-                  <Button onClick={() => navigate('/Register')} sx={{display: "inline-block"}}>Sign up</Button>
+                 <Box>
+                 <span>If you are a new user</span>
+                  <Button onClick={() => navigate('/Register')} sx={{display: "inline"}}>Sign up</Button>
+                 </Box>
             </form>
         </Box>
     )

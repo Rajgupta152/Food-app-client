@@ -39,7 +39,7 @@
 
 /* Register.js */
 .container form{
-  width: 30%;
+  width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -50,5 +50,5 @@
   border: 1px solid rgb(223, 210, 210);
   box-shadow: 10px 20px 20px rgb(223, 210, 210);
   padding: 50px;
-  padding-top: 0;
+  padding-top: 20px;
 }
