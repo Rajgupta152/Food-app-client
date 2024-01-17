@@ -20,7 +20,7 @@ const Nav = (props) => {
 
     const handleLogout = () => {
         props.loginSuccess(false);
-        localStorage.clear()
+        localStorage.clear();
     }
 
     return(
